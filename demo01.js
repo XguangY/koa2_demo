@@ -15,8 +15,8 @@ app.use(async (ctx) => {
     
 
     // 直接从ctx 中获取
-    const req_query1 = req.query
-    const req_querystring1 = req.querystring
+    const req_query1 = ctx.query
+    const req_querystring1 = ctx.querystring
 
 
     ctx.body = {
